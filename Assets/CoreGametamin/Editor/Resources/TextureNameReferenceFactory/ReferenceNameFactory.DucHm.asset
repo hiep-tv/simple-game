@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.DucHm
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: QuestionMark
+    _value: QuestionMark
+  - _name: Gray
+    _value: Gray
+  - _name: Red
+    _value: Red
+  - _name: Green
+    _value: Green
+  - _name: Top1
+    _value: Top1
+  - _name: Top2
+    _value: Top2
+  - _name: Top3
+    _value: Top3
+  - _name: Chest1
+    _value: Chest1
+  - _name: Star
+    _value: Star
+  - _name: GreenRectButton
+    _value: GreenRectButton
+  - _name: YellowRectButton
+    _value: YellowRectButton
+  - _name: Non
+    _value: Non
+  - _name: GrayRectButton
+    _value: GrayRectButton
+  - _name: Brick
+    _value: Brick
+  - _name: Concrete
+    _value: Concrete
+  - _name: Screw
+    _value: Screw
+  - _name: Wood
+    _value: Wood
+  - _name: Coin
+    _value: Coin
+  - _name: Emi
+    _value: Emi
+  - _name: Emily
+    _value: Emily
+  - _name: Thomas
+    _value: Thomas
+  - _name: Gem
+    _value: Gem
+  - _name: Energy
+    _value: Energy
+  - _name: Left
+    _value: Left
+  - _name: Right
+    _value: Right
+  - _name: Middle
+    _value: Middle
+  - _name: MiddleLeft
+    _value: MiddleLeft
+  - _name: MiddleRight
+    _value: MiddleRight
+  - _name: Up
+    _value: Up
+  - _name: Down
+    _value: Down
+  - _name: UpperMiddle
+    _value: UpperMiddle
+  - _name: LowerMiddle
+    _value: LowerMiddle
+  - _name: Item
+    _value: Item
+  - _name: Producer
+    _value: Producer
+  - _name: Material
+    _value: Material
+  - _name: Yellow
+    _value: Yellow
+  - _name: Purple
+    _value: Purple
+  - _name: Exp
+    _value: Exp

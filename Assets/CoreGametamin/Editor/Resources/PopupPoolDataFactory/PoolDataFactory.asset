@@ -1,0 +1,260 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8999d144abb42ed97d99e2edc9e743, type: 3}
+  m_Name: PoolDataFactory
+  m_EditorClassIdentifier: 
+  _poolConfigs:
+  - _popupName: MainMenuPopup
+    _poolIdString: MainMenu
+    _popupData: {fileID: 11400000, guid: beed45390a80b4df0a3cf2aea1b60c17, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: mainmenu_popupdata
+  - _popupName: ConfirmPopup
+    _poolIdString: Confirm
+    _popupData: {fileID: 11400000, guid: f8539c75aa97c42049f2200cdf22e67c, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: confirm_popupdata
+  - _popupName: ConfirmOptionPopup
+    _poolIdString: ConfirmOption
+    _popupData: {fileID: 11400000, guid: 9f6a28bc7f762475eb880d7363cc5332, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: confirm2buttons_popupdata
+  - _popupName: MainGamePopup
+    _poolIdString: MainGame
+    _popupData: {fileID: 11400000, guid: 138285d53b9454176a72983b223ac71a, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: maingame_popupdata
+  - _popupName: CollectionPopup
+    _poolIdString: Collection
+    _popupData: {fileID: 11400000, guid: 55c20e0230f3047a891341f848c6040c, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: collection_popupdata
+  - _popupName: Build_simulationPopup
+    _poolIdString: Build_simulation
+    _popupData: {fileID: 11400000, guid: 12af4bce427d0894b9535f0e48b4e6d2, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: build_simulation_popupdata
+  - _popupName: CurrencyPopup
+    _poolIdString: Currency
+    _popupData: {fileID: 11400000, guid: ff54b9fa020e24a0c9976f18ad8f976c, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: currency_popupdata
+  - _popupName: RewardstackPopup
+    _poolIdString: Rewardstack
+    _popupData: {fileID: 11400000, guid: faa47b5f781ed48469c4f2284029b8e4, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: rewardstack_popupdata
+  - _popupName: WaitingPopup
+    _poolIdString: Waiting
+    _popupData: {fileID: 11400000, guid: 040a42c1170e64c7dbc296be94d5aa7b, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: waiting_popupdata
+  - _popupName: ProducestepPopup
+    _poolIdString: Producestep
+    _popupData: {fileID: 11400000, guid: 98caaa7fa86d5074fa811e1ec230dce2, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: producestep_popupdata
+  - _popupName: IteminfoPopup
+    _poolIdString: Iteminfo
+    _popupData: {fileID: 11400000, guid: 367a54ac638654a48bd17a9e0687b8e1, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: iteminfo_popupdata
+  - _popupName: InventoryPopup
+    _poolIdString: Inventory
+    _popupData: {fileID: 11400000, guid: c6db872a84d26f943a258970d6cc00fc, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: inventory_popupdata
+  - _popupName: ShowRewardPopup
+    _poolIdString: ShowReward
+    _popupData: {fileID: 11400000, guid: 054084fac35ec47e0bf60f4e3f153e77, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: showreward_popupdata
+  - _popupName: HiddenObjectPopup
+    _poolIdString: HiddenObject
+    _popupData: {fileID: 11400000, guid: 73480c2b3e17d8843854a1d1b686c878, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: hiddenobject_popupdata
+  - _popupName: Hiddenobject_minigamePopup
+    _poolIdString: Hiddenobject_minigame
+    _popupData: {fileID: 11400000, guid: a1684f0a0cabe9646b4bb3b3cf30aa3f, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: hiddenobject_minigame_popupdata
+  - _popupName: Dialouge_eventPopup
+    _poolIdString: Dialouge_event
+    _popupData: {fileID: 11400000, guid: 1c002db18e45e164ab72a0e4f669766f, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: dialouge_event_popupdata
+  - _popupName: AddMoreEnergyPopup
+    _poolIdString: AddMoreEnergy
+    _popupData: {fileID: 11400000, guid: e955bfe26e0c446db976cb46a81f7126, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: addmoreenergy_popupdata
+  - _popupName: AddMoreEnergy2Popup
+    _poolIdString: AddMoreEnergy2
+    _popupData: {fileID: 11400000, guid: 1491b459f4e6f4f449ccf1484ee5c4d5, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: addmoreenergy2_popupdata
+  - _popupName: NewareaPopup
+    _poolIdString: Newarea
+    _popupData: {fileID: 11400000, guid: 9cc8b5d1a12498d4ea1ceb0de3dbf231, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: newarea_popupdata
+  - _popupName: UnlocknewareaPopup
+    _poolIdString: Unlocknewarea
+    _popupData: {fileID: 0}
+    _addressableGroup: Common UI
+    _addressableLabel: unlocknewarea_popupdata
+  - _popupName: IngameBackgroundPopup
+    _poolIdString: IngameBackground
+    _popupData: {fileID: 11400000, guid: e025fe64a2fa5554e97117211d7b411f, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: ingamebackground_popupdata
+  - _popupName: UpgradeSimulationPopup
+    _poolIdString: UpgradeSimulation
+    _popupData: {fileID: 11400000, guid: c2d6d13e7a7134108aa82a649a0b1e66, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: upgradesimulation_popupdata
+  - _popupName: CongratulationPopup
+    _poolIdString: Congratulation
+    _popupData: {fileID: 11400000, guid: 52ac240302111aa49b4a430b1ab27995, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: congratulation_popupdata
+  - _popupName: SurveyPopup
+    _poolIdString: Survey
+    _popupData: {fileID: 11400000, guid: 9a783d5d3f64b4e16ace2de963da062e, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: survey_popupdata
+  - _popupName: OneOfferPopup
+    _poolIdString: OneOffer
+    _popupData: {fileID: 11400000, guid: 5ffd395aa1b8b4c58be26f73dc8b6eda, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: oneoffer_popupdata
+  - _popupName: TwoOfferPopup
+    _poolIdString: TwoOffer
+    _popupData: {fileID: 11400000, guid: 9086111df55c64f54ae766e612761437, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: twooffer_popupdata
+  - _popupName: LuckyWheelPopup
+    _poolIdString: LuckyWheel
+    _popupData: {fileID: 11400000, guid: cc742e3167b5b4230aba61d741d4029a, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: luckywheel_popupdata
+  - _popupName: DailyChallengePopup
+    _poolIdString: DailyChallenge
+    _popupData: {fileID: 11400000, guid: f9a3b425a3aaad54b9cdf98381ac1cc7, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: dailychallenge_popupdata
+  - _popupName: ChallengeChecklistPopup
+    _poolIdString: ChallengeChecklist
+    _popupData: {fileID: 11400000, guid: eec9afc18f04e0b4094aef6e572b7505, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: challengechecklist_popupdata
+  - _popupName: LoadinguiPopup
+    _poolIdString: Loadingui
+    _popupData: {fileID: 11400000, guid: c46fe83fb6a3114459c4f14fee27263a, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: loadingui_popupdata
+  - _popupName: ViewRewardPopup
+    _poolIdString: ViewReward
+    _popupData: {fileID: 11400000, guid: e1512be9870c04142a732fd371047546, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: viewreward_popupdata
+  - _popupName: CardCollectionPopup
+    _poolIdString: CardCollection
+    _popupData: {fileID: 11400000, guid: dac7c18dd9d4442299475527d2d08bb3, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: cardcollection_popupdata
+  - _popupName: CardSetCollectionPopup
+    _poolIdString: CardSetCollection
+    _popupData: {fileID: 11400000, guid: dfbffd65c729c4b17b961e7e9f458a3e, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: cardsetcollection_popupdata
+  - _popupName: ViewCardCollectionPopup
+    _poolIdString: ViewCardCollection
+    _popupData: {fileID: 11400000, guid: 2922e8dbe1dc04c0d9921ae7d4ea5132, type: 2}
+    _addressableGroup: Common UI
+    _addressableLabel: viewcardcollection_popupdata
+  - _popupName: PlayerLevelPopupPopup
+    _poolIdString: PlayerLevelPopup
+    _popupData: {fileID: 11400000, guid: 84489f24ab891c740963a9aa0730171e, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: playerlevelpopup_popupdata
+  - _popupName: AreaCompletePopup
+    _poolIdString: AreaComplete
+    _popupData: {fileID: 11400000, guid: 868d7fde3df7896448921adf923904f0, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: areacomplete_popupdata
+  - _popupName: SkipReplaySimulationPopup
+    _poolIdString: SkipReplaySimulation
+    _popupData: {fileID: 11400000, guid: cce75e0c08fd2aa4183f6f3ada9db70d, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: skipreplaysimulation_popupdata
+  - _popupName: CollectJumpItemPopup
+    _poolIdString: CollectJumpItem
+    _popupData: {fileID: 11400000, guid: 6bd4e0fce80e20145bfc49b16166888a, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: collectjumpitem_popupdata
+  - _popupName: EditUserNamePopup
+    _poolIdString: EditUserName
+    _popupData: {fileID: 11400000, guid: 3e93f9e7c8515dc43bb92e9dacbe255f, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: editusername_popupdata
+  - _popupName: CardCollectionStarChestPopup
+    _poolIdString: CardCollectionStarChest
+    _popupData: {fileID: 11400000, guid: cfd4c2a0ec0884e6a938be51fac98179, type: 2}
+    _addressableGroup: Game Items
+    _addressableLabel: cardcollectionstarchest_popupdata
+  - _popupName: ConfirmUseJokePopup
+    _poolIdString: ConfirmUseJoke
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: confirmusejoke_popupdata
+  - _popupName: BalloonRisePopup
+    _poolIdString: BalloonRise
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: balloonrise_popupdata
+  - _popupName: BalloonRiseInfoPopup
+    _poolIdString: BalloonRiseInfo
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: balloonriseinfo_popupdata
+  - _popupName: Mysterybox_popupdataPopup
+    _poolIdString: Mysterybox_popupdata
+    _popupData: {fileID: 11400000, guid: 6b736674237e83d37b09e37062a8885c, type: 2}
+    _addressableGroup: Default Local Group
+    _addressableLabel: mysterybox_popupdata
+  - _popupName: MysteryBoxHowToPopup
+    _poolIdString: MysteryBoxHowTo
+    _popupData: {fileID: 0}
+    _addressableGroup: Default Local Group
+    _addressableLabel: mysteryboxhowto_popupdata
+  - _popupName: EndlessTreasurePopup
+    _poolIdString: EndlessTreasure
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: endlesstreasure_popupdata
+  - _popupName: FlashSaleOfferPopup
+    _poolIdString: FlashSaleOffer
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: flashsaleoffer_popupdata
+  - _popupName: EndlessTreasure2Popup
+    _poolIdString: EndlessTreasure2
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: endlesstreasure2_popupdata
+  - _popupName: PickOnePopup
+    _poolIdString: PickOne
+    _popupData: {fileID: 0}
+    _addressableGroup: Game Items
+    _addressableLabel: pickone_popupdata

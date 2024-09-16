@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: Default
+    _value: default
+  - _name: Mainmenu_popupdata
+    _value: mainmenu_popupdata
+  - _name: Mainmenu_atlas
+    _value: mainmenu_atlas
+  - _name: Shopiap_atlas
+    _value: shopiap_atlas
+  - _name: Maingame_atlas
+    _value: maingame_atlas
+  - _name: Maingame_popupdata
+    _value: maingame_popupdata
+  - _name: Shopiap_popupdata
+    _value: shopiap_popupdata
+  - _name: Commonui_atlas
+    _value: commonui_atlas
+  - _name: Confirm_popupdata
+    _value: confirm_popupdata
+  - _name: Confirm2buttons_popupdata
+    _value: confirm2buttons_popupdata
+  - _name: Settings_popupdata
+    _value: settings_popupdata
+  - _name: Localization_data
+    _value: localization_data
+  - _name: Waiting_popupdata
+    _value: waiting_popupdata
+  - _name: Item_collectreward
+    _value: item_collectreward
+  - _name: Noticemessage_popupdata
+    _value: noticemessage_popupdata
+  - _name: Viewreward_popupdata
+    _value: viewreward_popupdata
+  - _name: Dailyreward_atlas
+    _value: dailyreward_atlas
+  - _name: Dailyreward_popupdata
+    _value: dailyreward_popupdata
+  - _name: Currency_popupdata
+    _value: currency_popupdata
+  - _name: Userprofile_popupdata
+    _value: userprofile_popupdata
+  - _name: Itemconsumable_atlas
+    _value: itemconsumable_atlas
+  - _name: Rewardstack_popupdata
+    _value: rewardstack_popupdata
+  - _name: Notice_popupdata
+    _value: notice_popupdata
+  - _name: Producestep_popupdata
+    _value: producestep_popupdata
+  - _name: Iteminfo_popupdata
+    _value: iteminfo_popupdata
+  - _name: Inventory_popupdata
+    _value: inventory_popupdata
+  - _name: Showreward_popupdata
+    _value: showreward_popupdata
+  - _name: Simulation_atlas
+    _value: simulation_atlas
+  - _name: Hiddenobject_popupdata
+    _value: hiddenobject_popupdata
+  - _name: Hiddenobject_minigame_popupdata
+    _value: hiddenobject_minigame_popupdata
+  - _name: Dialouge_event_popupdata
+    _value: dialouge_event_popupdata
+  - _name: Story_atlas
+    _value: story_atlas
+  - _name: Addmoreenergy_popupdata
+    _value: addmoreenergy_popupdata
+  - _name: Addmoreenergy2_popupdata
+    _value: addmoreenergy2_popupdata
+  - _name: Howtoplay_popupdata
+    _value: howtoplay_popupdata
+  - _name: Newarea_popupdata
+    _value: newarea_popupdata
+  - _name: Newarea_atlas
+    _value: newarea_atlas
+  - _name: Unlocknewarea_popupdata
+    _value: unlocknewarea_popupdata
+  - _name: Ingamebackground_popupdata
+    _value: ingamebackground_popupdata
+  - _name: Upgradesimulation_popupdata
+    _value: upgradesimulation_popupdata
+  - _name: Powerboost_atlas
+    _value: powerboost_atlas
+  - _name: Congratulation_popupdata
+    _value: congratulation_popupdata
+  - _name: Survey_popupdata
+    _value: survey_popupdata
+  - _name: Areas_atlas
+    _value: areas_atlas
+  - _name: Twooffer_popupdata
+    _value: twooffer_popupdata
+  - _name: Luckywheel_popupdata
+    _value: luckywheel_popupdata
+  - _name: Luckywheel_atlas
+    _value: luckywheel_atlas
+  - _name: Dailychallenge_atlas
+    _value: dailychallenge_atlas
+  - _name: Dailychallenge_popupdata
+    _value: dailychallenge_popupdata
+  - _name: Hiddenitem_atlas
+    _value: hiddenitem_atlas
+  - _name: Unlocknewarea_atlas
+    _value: unlocknewarea_atlas
+  - _name: Challengechecklist_popupdata
+    _value: challengechecklist_popupdata
+  - _name: Loading_atlas
+    _value: loading_atlas
+  - _name: Loadingui_popupdata
+    _value: loadingui_popupdata
+  - _name: Cardcollection_popupdata
+    _value: cardcollection_popupdata
+  - _name: Cardsetcollection_popupdata
+    _value: cardsetcollection_popupdata
+  - _name: Viewcardcollection_popupdata
+    _value: viewcardcollection_popupdata
+  - _name: Cardcollectionicon_atlas
+    _value: cardcollectionicon_atlas
+  - _name: Playerlevelpopup_popupdata
+    _value: playerlevelpopup_popupdata
+  - _name: Areacomplete_popupdata
+    _value: areacomplete_popupdata
+  - _name: Skipreplaysimulation_popupdata
+    _value: skipreplaysimulation_popupdata
+  - _name: Collectjumpitem_popupdata
+    _value: collectjumpitem_popupdata
+  - _name: Profileavatar_atlas
+    _value: profileavatar_atlas
+  - _name: Editusername_popupdata
+    _value: editusername_popupdata
+  - _name: Confirmusejoke_popupdata
+    _value: confirmusejoke_popupdata
+  - _name: Balloonrise_popupdata
+    _value: balloonrise_popupdata
+  - _name: Balloonrise_atlas
+    _value: balloonrise_atlas
+  - _name: Balloonriseinfo_popupdata
+    _value: balloonriseinfo_popupdata
+  - _name: Mysterybox_popupdata
+    _value: mysterybox_popupdata
+  - _name: Mysteryboxhowto_popupdata
+    _value: mysteryboxhowto_popupdata
+  - _name: Mysterybox_atlas
+    _value: mysterybox_atlas
+  - _name: Endlesstreasure_popupdata
+    _value: endlesstreasure_popupdata
+  - _name: Endlesstreasure_atlas
+    _value: endlesstreasure_atlas
+  - _name: Flashsaleoffer_popupdata
+    _value: flashsaleoffer_popupdata
+  - _name: Endlesstreasure2_popupdata
+    _value: endlesstreasure2_popupdata
+  - _name: Pickone_popupdata
+    _value: pickone_popupdata

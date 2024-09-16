@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.Hiep
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: ScrollView
+    _value: ScrollView
+  - _name: ItemPool
+    _value: ItemPool
+  - _name: ItemGroup
+    _value: ItemGroup
+  - _name: ParentItem
+    _value: ParentItem
+  - _name: Symbol
+    _value: Symbol
+  - _name: ButtonPlay
+    _value: ButtonPlay
+  - _name: ButtonSettings
+    _value: ButtonSettings
+  - _name: ButtonCollection
+    _value: ButtonCollection
+  - _name: ButtonInventory
+    _value: ButtonInventory
+  - _name: BottomContent
+    _value: BottomContent
+  - _name: Cover
+    _value: Cover
+  - _name: Coin
+    _value: Coin
+  - _name: Gem
+    _value: Gem
+  - _name: Energy
+    _value: Energy
+  - _name: Shop
+    _value: Shop
+  - _name: Level
+    _value: Level
+  - _name: ParentTop
+    _value: ParentTop
+  - _name: TopContent
+    _value: TopContent
+  - _name: Dropdown
+    _value: Dropdown
+  - _name: Toggle
+    _value: Toggle
+  - _name: Settings
+    _value: Settings
+  - _name: SellItem
+    _value: SellItem
+  - _name: InfoButton
+    _value: InfoButton
+  - _name: Countdown
+    _value: Countdown
+  - _name: SellItemGroup
+    _value: SellItemGroup
+  - _name: ItemObject
+    _value: ItemObject
+  - _name: ItemConsumable
+    _value: ItemConsumable
+  - _name: ItemConsumableGroup
+    _value: ItemConsumableGroup
+  - _name: InputField
+    _value: InputField
+  - _name: Name
+    _value: Name
+  - _name: Email
+    _value: Email
+  - _name: UserInfo
+    _value: UserInfo
+  - _name: OneTimeOffer
+    _value: OneTimeOffer
+  - _name: WeekendOffer
+    _value: WeekendOffer
+  - _name: TreasureOffer
+    _value: TreasureOffer
+  - _name: LuckyWheel
+    _value: LuckyWheel
+  - _name: AddButton
+    _value: AddButton
+  - _name: Front
+    _value: Front
+  - _name: Back
+    _value: Back
+  - _name: DailyChallenge
+    _value: DailyChallenge
+  - _name: ChestReward
+    _value: ChestReward
+  - _name: CardPack
+    _value: CardPack
+  - _name: DailySellGroup
+    _value: DailySellGroup
+  - _name: CurrentStar
+    _value: CurrentStar

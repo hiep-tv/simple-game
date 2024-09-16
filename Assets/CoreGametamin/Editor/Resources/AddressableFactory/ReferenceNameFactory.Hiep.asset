@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.Hiep
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: Collection_atlas
+    _value: collection_atlas
+  - _name: Currency_popupdata
+    _value: currency_popupdata
+  - _name: Collection_popupdata
+    _value: collection_popupdata
+  - _name: Settings_popupdata
+    _value: settings_popupdata
+  - _name: Levelup_popupdata
+    _value: levelup_popupdata
+  - _name: Font_asset
+    _value: font_asset
+  - _name: Text_assets
+    _value: text_assets
+  - _name: Shopiap_popupdata
+    _value: shopiap_popupdata
+  - _name: Shopdata_configs
+    _value: shopdata_configs
+  - _name: Iteminfo_popupdata
+    _value: iteminfo_popupdata
+  - _name: Bucketproducer_atlas
+    _value: bucketproducer_atlas
+  - _name: Backpack_atlas
+    _value: backpack_atlas
+  - _name: Coffeemaker_atlas
+    _value: coffeemaker_atlas
+  - _name: Gardenbox_atlas
+    _value: gardenbox_atlas
+  - _name: Speaker_atlas
+    _value: speaker_atlas
+  - _name: Table_atlas
+    _value: table_atlas
+  - _name: Oneoffer_popupdata
+    _value: oneoffer_popupdata
+  - _name: Offers_atlas
+    _value: offers_atlas
+  - _name: Cardcollection1
+    _value: cardcollection1
+  - _name: Cardcollection
+    _value: cardcollection
+  - _name: Cardcollection_atlas
+    _value: cardcollection_atlas
+  - _name: Transition
+    _value: transition
+  - _name: Cardcollectionstarchest_popupdata
+    _value: cardcollectionstarchest_popupdata
+  - _name: Selectexchangecard_popupdata
+    _value: selectexchangecard_popupdata
+  - _name: Checkconnection_popupdata
+    _value: checkconnection_popupdata
+  - _name: Usejokercard_popupdata
+    _value: usejokercard_popupdata

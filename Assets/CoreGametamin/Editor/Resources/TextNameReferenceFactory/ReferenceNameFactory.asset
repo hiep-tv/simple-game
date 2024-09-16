@@ -1,0 +1,917 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: SettingsTitle
+    _value: SettingsTitle
+  - _name: MostPopular
+    _value: MostPopular
+  - _name: BestValue
+    _value: BestValue
+  - _name: NoAds
+    _value: NoAds
+  - _name: NoAdsMessage
+    _value: NoAdsMessage
+  - _name: RemoveAds
+    _value: RemoveAds
+  - _name: ContactUs
+    _value: ContactUs
+  - _name: Privacy
+    _value: Privacy
+  - _name: Terms
+    _value: Terms
+  - _name: Sound
+    _value: Sound
+  - _name: Music
+    _value: Music
+  - _name: Vibration
+    _value: Vibration
+  - _name: On
+    _value: On
+  - _name: Off
+    _value: Off
+  - _name: ButtonPlay
+    _value: ButtonPlay
+  - _name: PauseTitle
+    _value: PauseTitle
+  - _name: QuitTitle
+    _value: QuitTitle
+  - _name: Continue
+    _value: Continue
+  - _name: Resume
+    _value: Resume
+  - _name: Quit
+    _value: Quit
+  - _name: Restart
+    _value: Restart
+  - _name: TitleLevelFailed
+    _value: TitleLevelFailed
+  - _name: TitleLevelComplete
+    _value: TitleLevelComplete
+  - _name: RestartTitle
+    _value: RestartTitle
+  - _name: OK
+    _value: OK
+  - _name: Yes
+    _value: Yes
+  - _name: RateUs
+    _value: RateUs
+  - _name: MoreOffers
+    _value: MoreOffers
+  - _name: RatingTitle
+    _value: RatingTitle
+  - _name: RatingMessage
+    _value: RatingMessage
+  - _name: Collect
+    _value: Collect
+  - _name: MessageBuyBooster
+    _value: MessageBuyBooster
+  - _name: MessageAddBooster
+    _value: MessageAddBooster
+  - _name: Full
+    _value: Full
+  - _name: Level
+    _value: Level
+  - _name: Time
+    _value: Time
+  - _name: SpinLuckyWheelMessage
+    _value: SpinLuckyWheelMessage
+  - _name: Spin
+    _value: Spin
+  - _name: FreeSpin
+    _value: FreeSpin
+  - _name: ButtonBuildMap
+    _value: ButtonBuildMap
+  - _name: NextLevel
+    _value: NextLevel
+  - _name: Notifications
+    _value: Notifications
+  - _name: BuyIAPErrorTitle
+    _value: BuyIAPErrorTitle
+  - _name: BuyIAPPurchasingUnavailable
+    _value: BuyIAPPurchasingUnavailable
+  - _name: BuyIAPExistingPurchasePending
+    _value: BuyIAPExistingPurchasePending
+  - _name: BuyIAPProductUnavailable
+    _value: BuyIAPProductUnavailable
+  - _name: BuyIAPSignatureInvalid
+    _value: BuyIAPSignatureInvalid
+  - _name: BuyIAPUserCancelled
+    _value: BuyIAPUserCancelled
+  - _name: BuyIAPPaymentDeclined
+    _value: BuyIAPPaymentDeclined
+  - _name: BuyIAPUnknownMessage
+    _value: BuyIAPUnknownMessage
+  - _name: RequestTimeout
+    _value: RequestTimeout
+  - _name: BuyIAPTimeoutMessage
+    _value: BuyIAPTimeoutMessage
+  - _name: Purchasing
+    _value: Purchasing
+  - _name: TitlePurchaseSucceed
+    _value: TitlePurchaseSucceed
+  - _name: MessagePurchaseSucceed
+    _value: MessagePurchaseSucceed
+  - _name: TapToCollect
+    _value: TapToCollect
+  - _name: TapToContinue
+    _value: TapToContinue
+  - _name: TapToOpen
+    _value: TapToOpen
+  - _name: TitleWinLevel
+    _value: TitleWinLevel
+  - _name: No
+    _value: No
+  - _name: Cancel
+    _value: Cancel
+  - _name: Free
+    _value: Free
+  - _name: ExtraLevelRewardLabel
+    _value: ExtraLevelRewardLabel
+  - _name: Activate
+    _value: Activate
+  - _name: Play
+    _value: Play
+  - _name: StarChest
+    _value: StarChest
+  - _name: StarChestDescription
+    _value: StarChestDescription
+  - _name: Congratulations
+    _value: Congratulations
+  - _name: Awesome
+    _value: Awesome
+  - _name: SaveProgress
+    _value: SaveProgress
+  - _name: RestorePurchases
+    _value: RestorePurchases
+  - _name: RestorePurchasesSuccessful
+    _value: RestorePurchasesSuccessful
+  - _name: RestorePurchasesSuccessfulMessage
+    _value: RestorePurchasesSuccessfulMessage
+  - _name: RestorePurchasesFailed
+    _value: RestorePurchasesFailed
+  - _name: RestorePurchasesFailedMessage
+    _value: RestorePurchasesFailedMessage
+  - _name: LuckyWheel
+    _value: LuckyWheel
+  - _name: DeleteData
+    _value: DeleteData
+  - _name: Delete
+    _value: Delete
+  - _name: DeleteDataConfirmMessage
+    _value: DeleteDataConfirmMessage
+  - _name: DeleteDataMessage
+    _value: DeleteDataMessage
+  - _name: TitleChangeUserName
+    _value: TitleChangeUserName
+  - _name: ChangeUserNameRequiredMessage
+    _value: ChangeUserNameRequiredMessage
+  - _name: UnsupportCharacterMessage
+    _value: UnsupportCharacterMessage
+  - _name: Change
+    _value: Change
+  - _name: SaveProgressMessage
+    _value: SaveProgressMessage
+  - _name: SignInWith
+    _value: SignInWith
+  - _name: Ranking
+    _value: Ranking
+  - _name: Global
+    _value: Global
+  - _name: Local
+    _value: Local
+  - _name: SignOut
+    _value: SignOut
+  - _name: SignOutMessage
+    _value: SignOutMessage
+  - _name: UnlockAtLevel
+    _value: UnlockAtLevel
+  - _name: TitleNetworkError
+    _value: TitleNetworkError
+  - _name: MessageNetworkError
+    _value: MessageNetworkError
+  - _name: MessageNetworkError2
+    _value: MessageNetworkError2
+  - _name: Waiting
+    _value: Waiting
+  - _name: ComingSoon
+    _value: ComingSoon
+  - _name: TopPlayers
+    _value: TopPlayers
+  - _name: TopTeams
+    _value: TopTeams
+  - _name: TitleWeeklyContest
+    _value: TitleWeeklyContest
+  - _name: MessageStartWeeklyContest
+    _value: MessageStartWeeklyContest
+  - _name: Start
+    _value: Start
+  - _name: WeeklyContestHow2PlayStep1
+    _value: WeeklyContestHow2PlayStep1
+  - _name: WeeklyContestHow2PlayStep2
+    _value: WeeklyContestHow2PlayStep2
+  - _name: WeeklyContestHow2PlayStep3
+    _value: WeeklyContestHow2PlayStep3
+  - _name: Finished
+    _value: Finished
+  - _name: Reward
+    _value: Reward
+  - _name: YourRank
+    _value: YourRank
+  - _name: TitleTrophyRanking
+    _value: TitleTrophyRanking
+  - _name: ButtonLevelMiniGame
+    _value: ButtonLevelMiniGame
+  - _name: Team
+    _value: Team
+  - _name: Create
+    _value: Create
+  - _name: Search
+    _value: Search
+  - _name: JoinTeamMessage
+    _value: JoinTeamMessage
+  - _name: TeamUnlockMessage
+    _value: TeamUnlockMessage
+  - _name: CreateTeamMessage
+    _value: CreateTeamMessage
+  - _name: SearchTeamMessage
+    _value: SearchTeamMessage
+  - _name: Join
+    _value: Join
+  - _name: TeamLogo
+    _value: TeamLogo
+  - _name: TeamName
+    _value: TeamName
+  - _name: Description
+    _value: Description
+  - _name: TeamType
+    _value: TeamType
+  - _name: RequiredLevel
+    _value: RequiredLevel
+  - _name: Help
+    _value: Help
+  - _name: Request
+    _value: Request
+  - _name: CheckResult
+    _value: CheckResult
+  - _name: HarvestOffer
+    _value: HarvestOffer
+  - _name: Harvest
+    _value: Harvest
+  - _name: WeekendOfferTitle
+    _value: WeekendOfferTitle
+  - _name: TwoOfferTile
+    _value: TwoOfferTile
+  - _name: NoAdsOfferTitle
+    _value: NoAdsOfferTitle
+  - _name: SearchTeamNoResultMessage
+    _value: SearchTeamNoResultMessage
+  - _name: AlreadyPurchasedMessage
+    _value: AlreadyPurchasedMessage
+  - _name: Chat
+    _value: Chat
+  - _name: EnterTeamName
+    _value: EnterTeamName
+  - _name: EnterTeamDescription
+    _value: EnterTeamDescription
+  - _name: Choose
+    _value: Choose
+  - _name: TeamNameInvalidMessage
+    _value: TeamNameInvalidMessage
+  - _name: ChooseTeamBadgeTitle
+    _value: ChooseTeamBadgeTitle
+  - _name: Capacity
+    _value: Capacity
+  - _name: TeamScore
+    _value: TeamScore
+  - _name: Activity
+    _value: Activity
+  - _name: View
+    _value: View
+  - _name: TeamInfo
+    _value: TeamInfo
+  - _name: Edit
+    _value: Edit
+  - _name: Leave
+    _value: Leave
+  - _name: EditTeamTitle
+    _value: EditTeamTitle
+  - _name: Save
+    _value: Save
+  - _name: Leader
+    _value: Leader
+  - _name: CoLeader
+    _value: CoLeader
+  - _name: JoinTeamRequiredLevelMessage
+    _value: JoinTeamRequiredLevelMessage
+  - _name: RequiredLevelMessage
+    _value: RequiredLevelMessage
+  - _name: TeamFullMessage
+    _value: TeamFullMessage
+  - _name: LeaveTeamTitle
+    _value: LeaveTeamTitle
+  - _name: LeaveTeamMessage
+    _value: LeaveTeamMessage
+  - _name: MemberJoinTeamMessage
+    _value: MemberJoinTeamMessage
+  - _name: MemberLeftTeamMessage
+    _value: MemberLeftTeamMessage
+  - _name: TeamMemberRemovedMessage
+    _value: TeamMemberRemovedMessage
+  - _name: TeamMemberBlockedMessage
+    _value: TeamMemberBlockedMessage
+  - _name: TeamMemberPromotedToLeaderMessage
+    _value: TeamMemberPromotedToLeaderMessage
+  - _name: TeamMemberPromotedToCoLeaderMessage
+    _value: TeamMemberPromotedToCoLeaderMessage
+  - _name: TeamCreatedMessage
+    _value: TeamCreatedMessage
+  - _name: ChatTimeLabel
+    _value: ChatTimeLabel
+  - _name: ChatTimeLabel2
+    _value: ChatTimeLabel2
+  - _name: HelpedRequestMessage
+    _value: HelpedRequestMessage
+  - _name: Add
+    _value: Add
+  - _name: Great
+    _value: Great
+  - _name: Remove
+    _value: Remove
+  - _name: Block
+    _value: Block
+  - _name: MakeCoLeader
+    _value: MakeCoLeader
+  - _name: ViewProfile
+    _value: ViewProfile
+  - _name: DemoteCoLeader
+    _value: DemoteCoLeader
+  - _name: TeamCoLeaderDemoteToMemberMessage
+    _value: TeamCoLeaderDemoteToMemberMessage
+  - _name: DailyRewardTitle
+    _value: DailyRewardTitle
+  - _name: DailyRewardMessage
+    _value: DailyRewardMessage
+  - _name: DayLabel
+    _value: DayLabel
+  - _name: Collectx2
+    _value: Collectx2
+  - _name: ConfirmPromoteCoLeaderTitle
+    _value: ConfirmPromoteCoLeaderTitle
+  - _name: ConfirmPromoteCoLeaderMessage
+    _value: ConfirmPromoteCoLeaderMessage
+  - _name: ConfirmDemoteCoLeaderTitle
+    _value: ConfirmDemoteCoLeaderTitle
+  - _name: ConfirmDemoteCoLeaderMessage
+    _value: ConfirmDemoteCoLeaderMessage
+  - _name: ConfirmRemoveClanMemberTitle
+    _value: ConfirmRemoveClanMemberTitle
+  - _name: ConfirmRemoveClanMemberMessage
+    _value: ConfirmRemoveClanMemberMessage
+  - _name: ConfirmBlockClanMemberTitle
+    _value: ConfirmBlockClanMemberTitle
+  - _name: ConfirmBlockClanMemberMessage
+    _value: ConfirmBlockClanMemberMessage
+  - _name: ConfirmSwitchClanMessage
+    _value: ConfirmSwitchClanMessage
+  - _name: CurrentTeamToSwitchLabel
+    _value: CurrentTeamToSwitchLabel
+  - _name: NewTeamToSwitchLabel
+    _value: NewTeamToSwitchLabel
+  - _name: RequestJoinClanWhileInOtherClanMessage
+    _value: RequestJoinClanWhileInOtherClanMessage
+  - _name: RequestedJoinClanMessage
+    _value: RequestedJoinClanMessage
+  - _name: OpenClanLabel
+    _value: OpenClanLabel
+  - _name: ClosedClanLabel
+    _value: ClosedClanLabel
+  - _name: InternalErrorTitle
+    _value: InternalErrorTitle
+  - _name: InternalErrorMessage
+    _value: InternalErrorMessage
+  - _name: InternalErrorMessageWithErrorCode
+    _value: InternalErrorMessageWithErrorCode
+  - _name: GetMoreDiamondLabel
+    _value: GetMoreDiamondLabel
+  - _name: UserProfileTitle
+    _value: UserProfileTitle
+  - _name: StatsLabel
+    _value: StatsLabel
+  - _name: EditUserProfileTitle
+    _value: EditUserProfileTitle
+  - _name: AvatarLabel
+    _value: AvatarLabel
+  - _name: FrameLabel
+    _value: FrameLabel
+  - _name: ThemeLabel
+    _value: ThemeLabel
+  - _name: QuitEditingTitle
+    _value: QuitEditingTitle
+  - _name: QuitEditingMessage
+    _value: QuitEditingMessage
+  - _name: NoTeamLabel
+    _value: NoTeamLabel
+  - _name: TreasureOfferPopupTitle
+    _value: TreasureOfferPopupTitle
+  - _name: TreasureOfferPopupMessage
+    _value: TreasureOfferPopupMessage
+  - _name: TreasureOfferItemLockedMessage
+    _value: TreasureOfferItemLockedMessage
+  - _name: TreasureOfferItemClaimedMessage
+    _value: TreasureOfferItemClaimedMessage
+  - _name: TextGotIt
+    _value: TextGotIt
+  - _name: Place1Label
+    _value: Place1Label
+  - _name: Place2Label
+    _value: Place2Label
+  - _name: Place3Label
+    _value: Place3Label
+  - _name: TypeCharacterRequiredMessage
+    _value: TypeCharacterRequiredMessage
+  - _name: LanguageLabel
+    _value: LanguageLabel
+  - _name: ChangeLanguageConfirmMessage
+    _value: ChangeLanguageConfirmMessage
+  - _name: Skip
+    _value: Skip
+  - _name: ShopTitle
+    _value: ShopTitle
+  - _name: Diamond_199Name
+    _value: Diamond_199Name
+  - _name: Diamond_499Name
+    _value: Diamond_499Name
+  - _name: Diamond_799Name
+    _value: Diamond_799Name
+  - _name: Diamond_999Name
+    _value: Diamond_999Name
+  - _name: Diamond_1999Name
+    _value: Diamond_1999Name
+  - _name: Diamond_2999Name
+    _value: Diamond_2999Name
+  - _name: Diamond_3999Name
+    _value: Diamond_3999Name
+  - _name: Diamond_4999Name
+    _value: Diamond_4999Name
+  - _name: Diamond_7999Name
+    _value: Diamond_7999Name
+  - _name: Diamond_9999Name
+    _value: Diamond_9999Name
+  - _name: Bundle_399Name
+    _value: Bundle_399Name
+  - _name: Bundle_499Name
+    _value: Bundle_499Name
+  - _name: Bundle_799Name
+    _value: Bundle_799Name
+  - _name: Bundle_999Name
+    _value: Bundle_999Name
+  - _name: Bundle_1999Name
+    _value: Bundle_1999Name
+  - _name: Bundle_2999Name
+    _value: Bundle_2999Name
+  - _name: Bundle_3999Name
+    _value: Bundle_3999Name
+  - _name: Bundle_7999Name
+    _value: Bundle_7999Name
+  - _name: Bundle_9999Name
+    _value: Bundle_9999Name
+  - _name: NoAds_599Name
+    _value: NoAds_599Name
+  - _name: NoAds_499Name
+    _value: NoAds_499Name
+  - _name: Weekend_499Name
+    _value: Weekend_499Name
+  - _name: Weekend_999Name
+    _value: Weekend_999Name
+  - _name: Weekend_1999Name
+    _value: Weekend_1999Name
+  - _name: Weekend_2999Name
+    _value: Weekend_2999Name
+  - _name: Weekend_3999Name
+    _value: Weekend_3999Name
+  - _name: Bundle1Free1_799Name
+    _value: Bundle1Free1_799Name
+  - _name: Bundle1Free1_0Name
+    _value: Bundle1Free1_0Name
+  - _name: BundleGrowth_799Name
+    _value: BundleGrowth_799Name
+  - _name: BundleGrowth_0Name
+    _value: BundleGrowth_0Name
+  - _name: BundleGrowth_1999Name
+    _value: BundleGrowth_1999Name
+  - _name: Treasure_499Name
+    _value: Treasure_499Name
+  - _name: Treasure_999Name
+    _value: Treasure_999Name
+  - _name: LabelChangeUserName
+    _value: LabelChangeUserName
+  - _name: DefaultUserName
+    _value: DefaultUserName
+  - _name: OneTimeOfferLabel
+    _value: OneTimeOfferLabel
+  - _name: LoginFailTitle
+    _value: LoginFailTitle
+  - _name: LoginFailMessage
+    _value: LoginFailMessage
+  - _name: TryAgain
+    _value: TryAgain
+  - _name: LoginSuccessfullTitle
+    _value: LoginSuccessfullTitle
+  - _name: LoginSuccessfullMessage
+    _value: LoginSuccessfullMessage
+  - _name: LogOutTitle
+    _value: LogOutTitle
+  - _name: LogOutMessage
+    _value: LogOutMessage
+  - _name: TextConnect
+    _value: TextConnect
+  - _name: SaleOffLabel
+    _value: SaleOffLabel
+  - _name: UnlimitedBeginBoosterMessage
+    _value: UnlimitedBeginBoosterMessage
+  - _name: TermsConsentTitle
+    _value: TermsConsentTitle
+  - _name: TermsConsentMessage
+    _value: TermsConsentMessage
+  - _name: TextNoThank
+    _value: TextNoThank
+  - _name: TextIAccept
+    _value: TextIAccept
+  - _name: RollnDiceEventPopupTitle
+    _value: RollnDiceEventPopupTitle
+  - _name: RollnDiceEventDescription
+    _value: RollnDiceEventDescription
+  - _name: RollnDiceEventOutOfDiceMessage
+    _value: RollnDiceEventOutOfDiceMessage
+  - _name: RollnDiceEventStageLabel
+    _value: RollnDiceEventStageLabel
+  - _name: DiceName
+    _value: DiceName
+  - _name: DiceUsage
+    _value: DiceUsage
+  - _name: RollnDiceLapLabel
+    _value: RollnDiceLapLabel
+  - _name: RollnDiceEventWinAllStageLabel
+    _value: RollnDiceEventWinAllStageLabel
+  - _name: RollnDiceEventEndedMessage
+    _value: RollnDiceEventEndedMessage
+  - _name: RollnDiceEventTutorialStep1
+    _value: RollnDiceEventTutorialStep1
+  - _name: RollnDiceEventTutorialStep2
+    _value: RollnDiceEventTutorialStep2
+  - _name: RollnDiceEventStageLabel2
+    _value: RollnDiceEventStageLabel2
+  - _name: TextLoading
+    _value: TextLoading
+  - _name: HalloweenEventItemName
+    _value: HalloweenEventItemName
+  - _name: NextInMessage
+    _value: NextInMessage
+  - _name: NextInMessageFormat
+    _value: NextInMessageFormat
+  - _name: NewInMessage
+    _value: NewInMessage
+  - _name: NewInMessageFormat
+    _value: NewInMessageFormat
+  - _name: SeasonPassPopupTitle
+    _value: SeasonPassPopupTitle
+  - _name: SeasonPassPopupTitle2
+    _value: SeasonPassPopupTitle2
+  - _name: SeasonPassStartMessage
+    _value: SeasonPassStartMessage
+  - _name: SeasonPassEndedMessage
+    _value: SeasonPassEndedMessage
+  - _name: SeasonPassTutorialStep1
+    _value: SeasonPassTutorialStep1
+  - _name: SeasonPassTutorialStep2
+    _value: SeasonPassTutorialStep2
+  - _name: SeasonPassItemKeyName
+    _value: SeasonPassItemKeyName
+  - _name: SeasonPassItemKeyName2
+    _value: SeasonPassItemKeyName2
+  - _name: SeasonPassItemMooncakeName
+    _value: SeasonPassItemMooncakeName
+  - _name: SeasonPassItemMooncakeName2
+    _value: SeasonPassItemMooncakeName2
+  - _name: TextCollectItem
+    _value: TextCollectItem
+  - _name: SeasonGoldenPass
+    _value: SeasonGoldenPass
+  - _name: SeasonPassDescription
+    _value: SeasonPassDescription
+  - _name: SeasonPassRewardDescription
+    _value: SeasonPassRewardDescription
+  - _name: FrameAndTextEffectChangeMessage
+    _value: FrameAndTextEffectChangeMessage
+  - _name: ClanBonusRewardMessage
+    _value: ClanBonusRewardMessage
+  - _name: SeasonPassActiveMessage
+    _value: SeasonPassActiveMessage
+  - _name: SeasonPassUnlockStageMessage
+    _value: SeasonPassUnlockStageMessage
+  - _name: SeasonPassUnlockStageAndCollectMessage
+    _value: SeasonPassUnlockStageAndCollectMessage
+  - _name: SeasonPassUnlockStageAndActivatePassMessage
+    _value: SeasonPassUnlockStageAndActivatePassMessage
+  - _name: SeasonPassStageActivatePassMessage
+    _value: SeasonPassStageActivatePassMessage
+  - _name: SeasonPassStageUnlockedMessage
+    _value: SeasonPassStageUnlockedMessage
+  - _name: SeasonPassStageCollectedMessage
+    _value: SeasonPassStageCollectedMessage
+  - _name: Activated
+    _value: Activated
+  - _name: SeasonPassActivatedMessage
+    _value: SeasonPassActivatedMessage
+  - _name: YourNameLabel
+    _value: YourNameLabel
+  - _name: ClanSentGiftMessage
+    _value: ClanSentGiftMessage
+  - _name: Claim
+    _value: Claim
+  - _name: ClanSentGiftMessage1
+    _value: ClanSentGiftMessage1
+  - _name: ClanSentGiftMessage2
+    _value: ClanSentGiftMessage2
+  - _name: ClanSentGiftMessage3
+    _value: ClanSentGiftMessage3
+  - _name: ClanSentGiftMessage4
+    _value: ClanSentGiftMessage4
+  - _name: ClanSentGiftMessage5
+    _value: ClanSentGiftMessage5
+  - _name: HalloweenEventPopupTitle
+    _value: HalloweenEventPopupTitle
+  - _name: HalloweenEventItemName2
+    _value: HalloweenEventItemName2
+  - _name: AvailableLabel
+    _value: AvailableLabel
+  - _name: PurchasedLabel
+    _value: PurchasedLabel
+  - _name: SoldOutLabel
+    _value: SoldOutLabel
+  - _name: AutoLabel
+    _value: AutoLabel
+  - _name: CollectedLabel
+    _value: CollectedLabel
+  - _name: SoldOutMessage
+    _value: SoldOutMessage
+  - _name: GrandPrizeLabel
+    _value: GrandPrizeLabel
+  - _name: SeasonPassPopupTitle3
+    _value: SeasonPassPopupTitle3
+  - _name: RollAndDiceEventItemName
+    _value: RollAndDiceEventItemName
+  - _name: RollAndDiceEventItemName2
+    _value: RollAndDiceEventItemName2
+  - _name: EnergyPackTitle
+    _value: EnergyPackTitle
+  - _name: EnergyChestTitle
+    _value: EnergyChestTitle
+  - _name: ChestInfo
+    _value: ChestInfo
+  - _name: DiamondsLabel
+    _value: DiamondsLabel
+  - _name: BundlesLabel
+    _value: BundlesLabel
+  - _name: EnergiesLabel
+    _value: EnergiesLabel
+  - _name: SellItemsLabel
+    _value: SellItemsLabel
+  - _name: DailySellItemsLabel
+    _value: DailySellItemsLabel
+  - _name: RemainingPurchaseLabel
+    _value: RemainingPurchaseLabel
+  - _name: OutOfDiamondMessage
+    _value: OutOfDiamondMessage
+  - _name: Refresh
+    _value: Refresh
+  - _name: RefreshInLabel
+    _value: RefreshInLabel
+  - _name: CollectionTitle
+    _value: CollectionTitle
+  - _name: QuitAppTitle
+    _value: QuitAppTitle
+  - _name: QuitAppMessage
+    _value: QuitAppMessage
+  - _name: SplitterName
+    _value: SplitterName
+  - _name: UseBoosterMessage
+    _value: UseBoosterMessage
+  - _name: JokerName
+    _value: JokerName
+  - _name: HiddenItemPopupTitle
+    _value: HiddenItemPopupTitle
+  - _name: HiddenItemPopupMessage
+    _value: HiddenItemPopupMessage
+  - _name: BuildSimulationPopupFirstMessage
+    _value: BuildSimulationPopupFirstMessage
+  - _name: BuildSimulationPopupMessage
+    _value: BuildSimulationPopupMessage
+  - _name: BuildSimulationPopupMessage2
+    _value: BuildSimulationPopupMessage2
+  - _name: BuildSimulationLevel
+    _value: BuildSimulationLevel
+  - _name: BuildSimulationButtonLabel
+    _value: BuildSimulationButtonLabel
+  - _name: BuildSimulationMissingResourceMessage
+    _value: BuildSimulationMissingResourceMessage
+  - _name: AddEnergyPopupTitle
+    _value: AddEnergyPopupTitle
+  - _name: AddEnergyPopupMessage
+    _value: AddEnergyPopupMessage
+  - _name: RefillEnergyMessage
+    _value: RefillEnergyMessage
+  - _name: AddEnergyByAdMessage
+    _value: AddEnergyByAdMessage
+  - _name: WatchAdButtonText
+    _value: WatchAdButtonText
+  - _name: HowToPlayTitle
+    _value: HowToPlayTitle
+  - _name: FindObjectsText
+    _value: FindObjectsText
+  - _name: CollectThemText
+    _value: CollectThemText
+  - _name: LevelUpAndEarnRewardsText
+    _value: LevelUpAndEarnRewardsText
+  - _name: BeginText
+    _value: BeginText
+  - _name: NewAreaText
+    _value: NewAreaText
+  - _name: UnlockText
+    _value: UnlockText
+  - _name: LockedMessage
+    _value: LockedMessage
+  - _name: WellDoneText
+    _value: WellDoneText
+  - _name: DailyChallengeTitle
+    _value: DailyChallengeTitle
+  - _name: DailyChallengeMessage
+    _value: DailyChallengeMessage
+  - _name: XpInfoPopupMessage
+    _value: XpInfoPopupMessage
+  - _name: XPInfoPopupTitle
+    _value: XPInfoPopupTitle
+  - _name: MergeItemMission
+    _value: MergeItemMission
+  - _name: CollectionMission
+    _value: CollectionMission
+  - _name: DailyChallengeDayCompletedMessage
+    _value: DailyChallengeDayCompletedMessage
+  - _name: DailyChallengeBonusRewardCompletedMessage
+    _value: DailyChallengeBonusRewardCompletedMessage
+  - _name: AdErrorTitle
+    _value: AdErrorTitle
+  - _name: AdErrorMessage
+    _value: AdErrorMessage
+  - _name: SkipVideoTitle
+    _value: SkipVideoTitle
+  - _name: SkipVideoMessage
+    _value: SkipVideoMessage
+  - _name: CardCollectionTitle
+    _value: CardCollectionTitle
+  - _name: CardCollectionMessage
+    _value: CardCollectionMessage
+  - _name: CardSetCompleteMessage
+    _value: CardSetCompleteMessage
+  - _name: CardSetMessage
+    _value: CardSetMessage
+  - _name: CardSendLimitMessage
+    _value: CardSendLimitMessage
+  - _name: CardSetLabel
+    _value: CardSetLabel
+  - _name: CardItemLabel
+    _value: CardItemLabel
+  - _name: NewAppVersionTitle
+    _value: NewAppVersionTitle
+  - _name: NewAppVersionMessage
+    _value: NewAppVersionMessage
+  - _name: TextUpgrade
+    _value: TextUpgrade
+  - _name: TapToClaimText
+    _value: TapToClaimText
+  - _name: UseMission
+    _value: UseMission
+  - _name: CardCollectionStarTitle
+    _value: CardCollectionStarTitle
+  - _name: CardCollectionStarMessage
+    _value: CardCollectionStarMessage
+  - _name: OutOfStarMessage
+    _value: OutOfStarMessage
+  - _name: StartUnboxingText
+    _value: StartUnboxingText
+  - _name: CompleteOrderInText
+    _value: CompleteOrderInText
+  - _name: EarnRewardsText
+    _value: EarnRewardsText
+  - _name: MysteryBoxTitle
+    _value: MysteryBoxTitle
+  - _name: MaintenanceBreakTitle
+    _value: MaintenanceBreakTitle
+  - _name: MaintenanceBreakMessage
+    _value: MaintenanceBreakMessage
+  - _name: TextCloseApp
+    _value: TextCloseApp
+  - _name: RequiredResourceLabel
+    _value: RequiredResourceLabel
+  - _name: SpecialProducerInfoMessage
+    _value: SpecialProducerInfoMessage
+  - _name: CatFoundPopupMessage
+    _value: CatFoundPopupMessage
+  - _name: TextExchange
+    _value: TextExchange
+  - _name: ExchangeCardFullStarMessage
+    _value: ExchangeCardFullStarMessage
+  - _name: UseJokerCardTitle
+    _value: UseJokerCardTitle
+  - _name: UseJokerCardMessage
+    _value: UseJokerCardMessage
+  - _name: UseJokerCardItemLabel
+    _value: UseJokerCardItemLabel
+  - _name: UseJokerCardConfirmTitle
+    _value: UseJokerCardConfirmTitle
+  - _name: UseJokerCardConfirmMessage
+    _value: UseJokerCardConfirmMessage
+  - _name: TextSelect
+    _value: TextSelect
+  - _name: TextLevelFormat
+    _value: TextLevelFormat
+  - _name: LevelUpMessage
+    _value: LevelUpMessage
+  - _name: UseJokerCardRequireMessage
+    _value: UseJokerCardRequireMessage
+  - _name: CopyUserIdMessage
+    _value: CopyUserIdMessage
+  - _name: TextNew
+    _value: TextNew
+  - _name: BalloonRiseTitle
+    _value: BalloonRiseTitle
+  - _name: BalloonRiseMessage
+    _value: BalloonRiseMessage
+  - _name: BalloonRiseCompletedMessage
+    _value: BalloonRiseCompletedMessage
+  - _name: DayLabelFormat
+    _value: DayLabelFormat
+  - _name: DayLabelFormat2
+    _value: DayLabelFormat2
+  - _name: AddInventorySlotLabel
+    _value: AddInventorySlotLabel
+  - _name: BalloonRiseHowToPlay1
+    _value: BalloonRiseHowToPlay1
+  - _name: BalloonRiseHowToPlay2
+    _value: BalloonRiseHowToPlay2
+  - _name: BalloonRiseHowToPlay3
+    _value: BalloonRiseHowToPlay3
+  - _name: BalloonRiseHowToPlay4
+    _value: BalloonRiseHowToPlay4
+  - _name: Ended
+    _value: Ended
+  - _name: AllDone
+    _value: AllDone
+  - _name: Done
+    _value: Done
+  - _name: Treasure_399Name
+    _value: Treasure_399Name
+  - _name: Special_299Name
+    _value: Special_299Name
+  - _name: Special_999Name
+    _value: Special_999Name
+  - _name: Special_1999Name
+    _value: Special_1999Name
+  - _name: Bundle_299Name
+    _value: Bundle_299Name
+  - _name: OneForAll_299Name
+    _value: OneForAll_299Name
+  - _name: OneForAll_399Name
+    _value: OneForAll_399Name
+  - _name: OneForAll_599Name
+    _value: OneForAll_599Name
+  - _name: OneForAll_999Name
+    _value: OneForAll_999Name
+  - _name: FlashSale_299Name
+    _value: FlashSale_299Name
+  - _name: FlashSale_999Name
+    _value: FlashSale_999Name
+  - _name: FlashSale_1999Name
+    _value: FlashSale_1999Name
+  - _name: Energy_399Name
+    _value: Energy_399Name
+  - _name: PickOneTitle
+    _value: PickOneTitle
+  - _name: PickOneMessage
+    _value: PickOneMessage
+  - _name: PickOneLabel
+    _value: PickOneLabel
+  - _name: PlayHidenObjectTitle
+    _value: PlayHidenObjectTitle

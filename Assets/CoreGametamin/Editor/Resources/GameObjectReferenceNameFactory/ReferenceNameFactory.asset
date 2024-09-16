@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: Root
+    _value: Root
+  - _name: ContentPopup
+    _value: ContentPopup
+  - _name: Title
+    _value: Title
+  - _name: MainButton
+    _value: MainButton
+  - _name: LeftButton
+    _value: LeftButton
+  - _name: RightButton
+    _value: RightButton
+  - _name: Text
+    _value: Text
+  - _name: Image
+    _value: Image
+  - _name: Button
+    _value: Button
+  - _name: Icon
+    _value: Icon
+  - _name: Label
+    _value: Label
+  - _name: ParentContent
+    _value: ParentContent
+  - _name: ParentTitle
+    _value: ParentTitle
+  - _name: ParentBottom
+    _value: ParentBottom
+  - _name: Bottom
+    _value: Bottom
+  - _name: Top
+    _value: Top
+  - _name: ButtonClose
+    _value: ButtonClose
+  - _name: ParentButtonClose
+    _value: ParentButtonClose
+  - _name: AboveButton
+    _value: AboveButton
+  - _name: BelowButton
+    _value: BelowButton
+  - _name: CameraUI
+    _value: CameraUI
+  - _name: Message
+    _value: Message
+  - _name: Root
+    _value: Root
+  - _name: ContentPopup
+    _value: ContentPopup
+  - _name: Title
+    _value: Title
+  - _name: MainButton
+    _value: MainButton
+  - _name: LeftButton
+    _value: LeftButton
+  - _name: RightButton
+    _value: RightButton
+  - _name: Text
+    _value: Text
+  - _name: Image
+    _value: Image
+  - _name: Button
+    _value: Button
+  - _name: Icon
+    _value: Icon
+  - _name: Label
+    _value: Label
+  - _name: ParentContent
+    _value: ParentContent
+  - _name: ParentTitle
+    _value: ParentTitle
+  - _name: ParentBottom
+    _value: ParentBottom
+  - _name: Bottom
+    _value: Bottom
+  - _name: Top
+    _value: Top
+  - _name: ButtonClose
+    _value: ButtonClose
+  - _name: ParentButtonClose
+    _value: ParentButtonClose
+  - _name: AboveButton
+    _value: AboveButton
+  - _name: BelowButton
+    _value: BelowButton
+  - _name: CameraUI
+    _value: CameraUI
+  - _name: Message
+    _value: Message
+  - _name: ButtonCloseOutside
+    _value: ButtonCloseOutside
+  - _name: Bundle
+    _value: Bundle
+  - _name: WelldonePopup
+    _value: WelldonePopup
+  - _name: UserId
+    _value: UserId
+  - _name: BalloonRise
+    _value: BalloonRise
+  - _name: RewardStack
+    _value: RewardStack
+  - _name: EndlessTreasure
+    _value: EndlessTreasure
+  - _name: FlashSale
+    _value: FlashSale
+  - _name: Discount
+    _value: Discount
+  - _name: Promotion
+    _value: Promotion
+  - _name: PickOne
+    _value: PickOne
+  - _name: Indicator
+    _value: Indicator

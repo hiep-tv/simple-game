@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.DucHm
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: Ordercontainer_popupdata
+    _value: ordercontainer_popupdata
+  - _name: Buildingmaterial_atlas
+    _value: buildingmaterial_atlas
+  - _name: Simulation_popupdata
+    _value: simulation_popupdata
+  - _name: Build_simulation_popupdata
+    _value: build_simulation_popupdata
+  - _name: Ordercontainer_popupdata
+    _value: ordercontainer_popupdata
+  - _name: Character_atlas
+    _value: character_atlas
+  - _name: Orderrewarddetail_popupdata
+    _value: orderrewarddetail_popupdata
+  - _name: Specialorderreward_popupdata
+    _value: specialorderreward_popupdata

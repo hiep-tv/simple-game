@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.CongAnh
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: BlueRectButton
+    _value: BlueRectButton
+  - _name: DayOneItem
+    _value: DayOneItem
+  - _name: DayTwoItem
+    _value: DayTwoItem
+  - _name: DayThreeItem
+    _value: DayThreeItem
+  - _name: DayFourItem
+    _value: DayFourItem
+  - _name: DayFiveItem
+    _value: DayFiveItem
+  - _name: DaySixItem
+    _value: DaySixItem
+  - _name: DaySevenItem
+    _value: DaySevenItem
+  - _name: GiftBoxGreen
+    _value: GiftBoxGreen
+  - _name: GiftBoxBlue
+    _value: GiftBoxBlue
+  - _name: GiftBoxPurple
+    _value: GiftBoxPurple
+  - _name: GiftBoxPink
+    _value: GiftBoxPink
+  - _name: Calendar
+    _value: Calendar
+  - _name: Background
+    _value: Background
+  - _name: Simulation
+    _value: Simulation

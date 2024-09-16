@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory.CongAnh
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: Facebook
+    _value: Facebook
+  - _name: Google
+    _value: Google
+  - _name: Apple
+    _value: Apple
+  - _name: Left
+    _value: Left
+  - _name: Right
+    _value: Right
+  - _name: Mid
+    _value: Mid
+  - _name: Splitter
+    _value: Splitter
+  - _name: Joker
+    _value: Joker
+  - _name: ParentItemHorizontal
+    _value: ParentItemHorizontal
+  - _name: ParentItemGrid
+    _value: ParentItemGrid
+  - _name: Tick
+    _value: Tick
+  - _name: MaskItem
+    _value: MaskItem
+  - _name: Calendar
+    _value: Calendar
+  - _name: GiftBox
+    _value: GiftBox
+  - _name: GiftInfo
+    _value: GiftInfo
+  - _name: GiftItem
+    _value: GiftItem
+  - _name: PopupContainer
+    _value: PopupContainer
+  - _name: ItemContent
+    _value: ItemContent
+  - _name: Reward_ProgressBar
+    _value: Reward_ProgressBar
+  - _name: Frames
+    _value: Frames
+  - _name: Profile
+    _value: Profile

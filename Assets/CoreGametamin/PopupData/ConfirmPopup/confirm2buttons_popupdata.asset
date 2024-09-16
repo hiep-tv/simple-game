@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303bb63c67b054749870bc928b75810a, type: 3}
+  m_Name: confirm2buttons_popupdata
+  m_EditorClassIdentifier: 
+  _popup: {fileID: 1819173776286298368, guid: 6098f2f1358684bc1928cc60006b1505, type: 3}
+  _popupPartDatas:
+  - _id: 
+    _target: {fileID: 2870467349978614190, guid: eb66ff9c56d8749f59579f9bf203630f, type: 3}
+    _ignoreCopy: 0
+    _parentID: ParentBottom
+  - _id: ContentPopup
+    _target: {fileID: 5961496646072250790, guid: c779a5d788b5244a3bb0a34a214caffc, type: 3}
+    _ignoreCopy: 0
+    _parentID: ParentContent
+  - _id: Title
+    _target: {fileID: 259054993118284984, guid: a6d5a3459a1b844b184fbb116d5d7be2, type: 3}
+    _ignoreCopy: 0
+    _parentID: ParentTitle
+  - _id: ButtonClose
+    _target: {fileID: 3268870856239487799, guid: 54dc3cda998ed42faa4ada5837f2a241, type: 3}
+    _ignoreCopy: 0
+    _parentID: ParentButtonClose
+  _pools: []

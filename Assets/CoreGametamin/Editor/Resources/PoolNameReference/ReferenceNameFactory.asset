@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f33c904e71640f9bd42db67c3d17b3, type: 3}
+  m_Name: ReferenceNameFactory
+  m_EditorClassIdentifier: 
+  _referenceNameDatas:
+  - _name: MainMenu
+    _value: MainMenu
+  - _name: MainGame
+    _value: MainGame
+  - _name: Confirm
+    _value: Confirm
+  - _name: ConfirmOption
+    _value: ConfirmOption
+  - _name: Collection
+    _value: Collection
+  - _name: Build_simulation
+    _value: Build_simulation
+  - _name: Currency
+    _value: Currency
+  - _name: Rewardstack
+    _value: Rewardstack
+  - _name: OrderContainer
+    _value: OrderContainer
+  - _name: Settings
+    _value: Settings
+  - _name: LevelUp
+    _value: LevelUp
+  - _name: ShopIAP
+    _value: ShopIAP
+  - _name: Notice
+    _value: Notice
+  - _name: Waiting
+    _value: Waiting
+  - _name: Producestep
+    _value: Producestep
+  - _name: Iteminfo
+    _value: Iteminfo
+  - _name: Inventory
+    _value: Inventory
+  - _name: ShowReward
+    _value: ShowReward
+  - _name: HiddenObject
+    _value: HiddenObject
+  - _name: Hiddenobject_minigame
+    _value: Hiddenobject_minigame
+  - _name: Dialouge_event
+    _value: Dialouge_event
+  - _name: AddMoreEnergy
+    _value: AddMoreEnergy
+  - _name: AddMoreEnergy2
+    _value: AddMoreEnergy2
+  - _name: Newarea
+    _value: Newarea
+  - _name: Unlocknewarea
+    _value: Unlocknewarea
+  - _name: IngameBackground
+    _value: IngameBackground
+  - _name: UpgradeSimulation
+    _value: UpgradeSimulation
+  - _name: Congratulation
+    _value: Congratulation
+  - _name: Survey
+    _value: Survey
+  - _name: OneOffer
+    _value: OneOffer
+  - _name: TwoOffer
+    _value: TwoOffer
+  - _name: LuckyWheel
+    _value: LuckyWheel
+  - _name: DailyChallenge
+    _value: DailyChallenge
+  - _name: ChallengeChecklist
+    _value: ChallengeChecklist
+  - _name: Loadingui
+    _value: Loadingui
+  - _name: ViewReward
+    _value: ViewReward
+  - _name: CardCollection
+    _value: CardCollection
+  - _name: CardSetCollection
+    _value: CardSetCollection
+  - _name: ViewCardCollection
+    _value: ViewCardCollection
+  - _name: PlayerLevelPopup
+    _value: PlayerLevelPopup
+  - _name: AreaComplete
+    _value: AreaComplete
+  - _name: SkipReplaySimulation
+    _value: SkipReplaySimulation
+  - _name: CollectJumpItem
+    _value: CollectJumpItem
+  - _name: CardCollectionStarChest
+    _value: CardCollectionStarChest
+  - _name: EditUserName
+    _value: EditUserName
+  - _name: ConfirmUseJoke
+    _value: ConfirmUseJoke
+  - _name: BalloonRise
+    _value: BalloonRise
+  - _name: BalloonRiseInfo
+    _value: BalloonRiseInfo
+  - _name: Mysterybox_popupdata
+    _value: Mysterybox_popupdata
+  - _name: MysteryBoxHowTo
+    _value: MysteryBoxHowTo
+  - _name: EndlessTreasure
+    _value: EndlessTreasure
+  - _name: FlashSaleOffer
+    _value: FlashSaleOffer
+  - _name: EndlessTreasure2
+    _value: EndlessTreasure2
+  - _name: PickOne
+    _value: PickOne
