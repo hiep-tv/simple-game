@@ -48,7 +48,7 @@ namespace UnnamedGame
                 return canSelect;
             });
         }
-        public bool GetNearByCell(Vector2 position, out CellData selectedCellData)
+        public bool GetNearByEmptyCell(Vector2 position, out CellData selectedCellData)
         {
             CellData result = default;
             var hasCell = false;
@@ -64,6 +64,48 @@ namespace UnnamedGame
                 return canPutOnCell;
             });
             selectedCellData = result;
+            return hasCell;
+        }
+        public CellData GetNearestCell(int cellid, Vector2 position, out float distance)
+        {
+            CellData result = default;
+            var minDistance = float.MaxValue;
+            _cellDatas.For(cellData =>
+            {
+                if (cellData.CellId != cellid)
+                {
+                    var distance = Vector2.Distance(cellData.Position, position);
+                    if (distance < minDistance)
+                    {
+                        minDistance = distance;
+                        result = cellData;
+                    }
+                }
+            });
+            distance = minDistance;
+            return result;
+        }
+        public bool GetNearestEmtyCell(Vector2 position, out CellData cellData)
+        {
+            CellData result = default;
+            var hasCell = false;
+            var minDistance = float.MaxValue;
+            _cellDatas.ForReverse((cellData, index) =>
+            {
+                var distance = Vector2.Distance(cellData.Position, position);
+                if (distance < minDistance)
+                {
+                    var canPutOnCell = cellData.CanPutBoardItem;
+                    if (canPutOnCell)
+                    {
+                        hasCell = true;
+                        minDistance = distance;
+                        result = cellData;
+                    }
+                }
+
+            });
+            cellData = result;
             return hasCell;
         }
         public bool IsNearByCell(Vector2 position)
@@ -85,6 +127,10 @@ namespace UnnamedGame
             var cellData = _cellDatas.GetSafe(cellId);
             cellData.Release();
         }
+        public CellData GetCell(int cellId)
+        {
+            return _cellDatas.GetSafe(cellId);
+        }
         public CellData GetCell(int row, int colum)
         {
             if (row < 0 || colum < 0 || row >= _row || colum >= _column)
@@ -93,23 +139,6 @@ namespace UnnamedGame
             }
             var cellId = _column * row + colum;
             return _cellDatas.GetSafe(cellId);
-        }
-        public bool GetEmtyCell(out CellData cellData)
-        {
-            CellData result = default;
-            var hasCell = false;
-            _cellDatas.ForBreakable(cellData =>
-            {
-                var canPutOnCell = cellData.CanPutBoardItem;
-                if (canPutOnCell)
-                {
-                    result = cellData;
-                    hasCell = true;
-                }
-                return canPutOnCell;
-            });
-            cellData = result;
-            return hasCell;
         }
     }
 }

@@ -1,13 +1,13 @@
-using DG.Tweening;
+using System;
 using Gametamin.Core;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Rendering;
 
 namespace UnnamedGame
 {
     public partial class BoardItemController : MonoBehaviour
     {
-        static float _deltaSelectedY = 1.2f;
+        bool _autoStarted;
         bool _canSelecteBoardItem = true;
         public bool CanSelecteBoardItem => _canSelecteBoardItem;
         bool _selectedItemOnBoard;
@@ -20,10 +20,7 @@ namespace UnnamedGame
                 if (_selectedBoardItem != null)
                 {
                     _selectedItemOnBoard = SelectedItemOnBoard(position);
-                    if (_selectedItemOnBoard)
-                    {
-                        _cellController.CheckNearByCell(_selectedBoardItem.CurrentPosition);
-                    }
+                    SetLayer(_selectedBoardItem.BoardItemObject, _movingLayer);
                 }
             }
         }
@@ -37,7 +34,7 @@ namespace UnnamedGame
                 }
             }
         }
-        void ReleaseBoardItem()
+        void ReleaseBoardItem(Vector2 position)
         {
             if (CanSelecteBoardItem)
             {
@@ -45,18 +42,11 @@ namespace UnnamedGame
                 {
                     if (_selectedItemOnBoard)
                     {
-                        if (_cellController.GetNearByCell(_selectedBoardItem.CurrentPosition, out CellData cellData))
-                        {
-                            PutBoardItemOnBoard(cellData);
-                        }
-                        else
-                        {
-                            _selectedBoardItem.ResetPosition();
-                        }
+                        MergeBoardItems(_selectedBoardItem);
                     }
-                    else if (_cellController.GetEmtyCell(out CellData cellData))
+                    else if (_cellController.GetNearestEmtyCell(position, out CellData cellData))
                     {
-                        PutBoardItemOnBoard(cellData);
+                        PutBoardItemOnBoard(_selectedBoardItem, cellData);
                     }
                 }
             }
@@ -81,7 +71,7 @@ namespace UnnamedGame
             BoardItemData result = default;
             _onboardBoardItems.ForBreakable(data =>
             {
-                var canSelect = NearBy(data.Position, position);
+                var canSelect = data.ItemState == ItemState.Ready && NearBy(data.Position, position);
                 if (canSelect)
                 {
                     result = data;
@@ -90,14 +80,29 @@ namespace UnnamedGame
             });
             return result;
         }
-        void PutBoardItemOnBoard(CellData cellData)
+        void PutBoardItemOnBoard(BoardItemData boardItem, CellData cellData)
         {
-            _selectedBoardItem.UpdatePosition(cellData.Position);
-            if (_selectedBoardItem.IsQueue)
+            var @char = 'A';// UnityEngine.Random.Range(97, 200);
+            boardItem.SetTileData(new TileData(TileType.Alphabet, @char));
+            MoveBoardItemOnBoard(boardItem, cellData
+                , () => SetLayer(boardItem.BoardItemObject, _normalLayer));
+            if (!_autoStarted)
             {
-                _selectedBoardItem.IsQueue = false;
-                _queueBoardItems.Remove(_selectedBoardItem);
-                _onboardBoardItems.Add(_selectedBoardItem);
+                _autoStarted = true;
+                2f.DelayCall(() =>
+                {
+                    1f.DelayCallLoop(() => FindItemToMerge(_onboardBoardItems));
+                });
+            }
+        }
+        void MoveBoardItemOnBoard(BoardItemData boardItem, CellData cellData, Action callback = null)
+        {
+            if (boardItem.ItemState == ItemState.InQueue)
+            {
+                //boardItem.ItemState = ItemState.Ready;
+                ChangeStateToReady(boardItem);
+                _queueBoardItems.Remove(boardItem);
+                _onboardBoardItems.Add(boardItem);
                 if (_queueBoardItems.GetCountSafe() <= 0)
                 {
                     GenerateQueueBoardItems();
@@ -105,19 +110,28 @@ namespace UnnamedGame
             }
             else
             {
-                var oldCellId = _selectedBoardItem.CellId;
+                var oldCellId = boardItem.CellId;
                 _cellController.ReleaseCell(oldCellId);
             }
-            _selectedBoardItem.CellId = cellData.CellId;
-            cellData.SetBoardItemData(_selectedBoardItem);
-
-            //MergeBoardItems(cellData.Row, cellData.Column);
+            LinkBoardItemToCell(boardItem, cellData);
+            boardItem.UpdatePosition(cellData.Position, callback);
+        }
+        void LinkBoardItemToCell(BoardItemData boardItem, CellData cellData)
+        {
+            boardItem.CellId = cellData.CellId;
+            cellData.SetBoardItemData(boardItem);
         }
         void SetBoardItemPosition(Vector2 position)
         {
-            var boardItemPosition = GetWorldPoint(position);
-            _selectedBoardItem.BoardItemObject.SetPositionSafe(boardItemPosition);
+            _selectedBoardItem.BoardItemObject.SetPositionSafe(position);
             _cellController.CheckNearByCell(_selectedBoardItem.BoardItemTransform.position);
+        }
+        void ChangeStateToReady(BoardItemData boardItem)
+        {
+            1f.DelayCall(() =>
+            {
+                boardItem.ItemState = ItemState.Ready;
+            });
         }
         bool NearBy(Vector2 pos1, Vector2 pos2)
         {
@@ -126,6 +140,11 @@ namespace UnnamedGame
         bool SelectedItemOnBoard(Vector2 position)
         {
             return _cellController.IsNearByCell(position);
+        }
+        void SetLayer(GameObject itemObject, int layer)
+        {
+            var sortingGroup = itemObject.GetComponentSafe<SortingGroup>();
+            sortingGroup.sortingOrder = layer;
         }
     }
 }

@@ -1,5 +1,4 @@
 using System;
-using Gametamin.Core;
 using UnityEngine;
 
 namespace UnnamedGame
@@ -13,7 +12,6 @@ namespace UnnamedGame
         [SerializeField] int _column;
         [SerializeField] bool _unlocked;
         [SerializeField] bool _hasBoardItem;
-        CellObject _cell;
         BoardItemData _boardItemData;
         public GameObject CellObject => _cellObject;
         public Vector2 Position => _cellObject.transform.position;
@@ -32,7 +30,6 @@ namespace UnnamedGame
             _cellObject = cellObject;
             _unlocked = unlocked;
             _hasBoardItem = hasBoardItem;
-            _cell = cellObject.GetComponentSafe<CellObject>();
         }
         public void SetBoardItemData(BoardItemData boardItemData)
         {
@@ -41,7 +38,7 @@ namespace UnnamedGame
         }
         public void Highlight(bool active)
         {
-            _cell.Highlight(active);
+
         }
         public void Release()
         {

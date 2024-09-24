@@ -18,11 +18,13 @@ namespace UnnamedGame
         }
         void OnPointerDrag(Vector2 position)
         {
+            position = GetWorldPoint(position);
             DragBoardItem(position);
         }
         void OnPointerUp(Vector2 position)
         {
-            ReleaseBoardItem();
+            position = GetWorldPoint(position);
+            ReleaseBoardItem(position);
         }
         Vector2 GetWorldPoint(Vector2 position)
         {

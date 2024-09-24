@@ -10,15 +10,29 @@ namespace UnnamedGame
         [SerializeField] List<BoardItemData> _onboardBoardItems = new();
         [SerializeField] List<BoardItemData> _queueBoardItems = new();
         Camera _mainCamera;
-        Vector2Int _boardSize;
-        public void Construct(BoardItemGenerator boardItemGenerator, CellController cellController, Vector2Int boardSize)
+
+        float _distanceMergeable;
+        float _distanceSwappable;
+
+        int _mergeLayer = 0;
+        int _normalLayer = 1;
+        int _movingLayer = 2;
+
+        public BoardItemController SetControllers(BoardItemGenerator boardItemGenerator, CellController cellController)
         {
-            _boardSize = boardSize;
             _mainCamera = Camera.main;
             _boardItemGenerator = boardItemGenerator;
             _cellController = cellController;
             RegisterInputEvent();
             GenerateQueueBoardItems();
+            return this;
+        }
+        public BoardItemController SetData(Vector2 cellSize)
+        {
+            var distance = Mathf.Sqrt(2 * Mathf.Pow(cellSize.x / 2f, 2));
+            _distanceMergeable = distance + distance / 3f;
+            _distanceSwappable = distance + distance / 6f;
+            return this;
         }
         void GenerateQueueBoardItems()
         {

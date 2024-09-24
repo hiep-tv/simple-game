@@ -5,6 +5,15 @@ using UnityEngine;
 
 namespace UnnamedGame
 {
+    public enum ItemState
+    {
+        Non,
+        InPool,
+        InQueue,
+        Moving,
+        Merge,
+        Ready,
+    }
     [Serializable]
     public class BoardItemData
     {
@@ -13,44 +22,53 @@ namespace UnnamedGame
         [SerializeField] GameObject _boardItemGameObject;
         [SerializeField] Vector2 _position;
         [SerializeField] TileData _tileData;
-        [SerializeField] bool _released;
         [SerializeField] int _cellId = -1;
+        public ItemState ItemState
+        {
+            get;
+            set;
+        }
         Transform _boardItemTransform;
-        BoardItemObject _boardItemObject;
         public TileData TileData => _tileData;
         public GameObject BoardItemObject => _boardItemGameObject;
         public Transform BoardItemTransform => _boardItemTransform;
-        public bool Released => _released;
         public Vector2 Position => _position;
         public Vector2 CurrentPosition => BoardItemTransform.position;
         public int CellId { get => _cellId; set => _cellId = value; }
-        public bool IsQueue { get; set; }
-
-        public BoardItemData(GameObject boardItemObject, Vector2 position, TileData tileData)
+        public BoardItemData(GameObject boardItemObject, Vector2 position)
         {
             _boardItemGameObject = boardItemObject;
             _boardItemTransform = _boardItemGameObject.transform;
-            SetBoardItemData(position, tileData);
+            SetBoardItemPosition(position);
         }
-        public void SetBoardItemData(Vector2 position, TileData tileData)
+        public void SetBoardItemPosition(Vector2 position)
         {
-            _released = false;
-            _tileData = tileData;
             _boardItemGameObject.SetLocalPositionSafe(position);
             _boardItemGameObject.SetActiveSafe(true);
             _position = _boardItemGameObject.transform.position;
-            SetTiles(tileData);
-            IsQueue = true;
+            var @char = '?';
+            SetTileData(new TileData(TileType.Alphabet, (char)@char));
+            ItemState = ItemState.InQueue;
         }
-        void SetTiles(TileData tileDatas)
+        public void SetTileData(TileData tileDatas)
         {
-            _boardItemObject = _boardItemGameObject.GetComponentSafe<BoardItemObject>();
-            _boardItemObject.Construct(tileDatas);
+            _tileData = tileDatas;
+            _boardItemGameObject.SetTextReference(_tileData.Value);
         }
         public void UpdatePosition(Vector2 position, Action callback = null)
         {
             _position = position;
             MoveBoardItem(_position, _moveDuration, callback);
+        }
+        public void UpdatePositionThenRelease(Vector2 position, Action callback = null)
+        {
+            ItemState = ItemState.Moving;
+            _position = position;
+            MoveBoardItem(_position, _moveDuration, () =>
+            {
+                Release();
+                callback?.Invoke();
+            });
         }
         public void ResetPosition(Action callback = null)
         {
@@ -61,16 +79,9 @@ namespace UnnamedGame
             _boardItemTransform.DOMove(position, duration).SetEase(Ease.OutBack)
                 .OnComplete(() => callback?.Invoke());
         }
-        public bool CanCombine(BoardItemData other)
-        {
-            var otherTiles = other.TileData;
-            var canCombine = other.TileData.Value == TileData.Value;
-            return canCombine;
-        }
-
         public void Release()
         {
-            _released = true;
+            ItemState = ItemState.InPool;
             _cellId = -1;
             _boardItemGameObject.SetActiveSafe(false);
         }
@@ -79,23 +90,29 @@ namespace UnnamedGame
     public struct TileData
     {
         public static int DefaultValue = 0;
+        public static bool IsDefaultValue(int value) => value == DefaultValue;
 
-        [SerializeField] int _index;
-        [SerializeField] int _value;
-        public TileData(int index, int value)
-        {
-            _index = index;
-            _value = value;
-            LockTile = false;
-        }
-        public int Index { get => _index; set => _index = value; }
-        public int Value { get => _value; set => _value = value; }
+        [SerializeField] TileType _type;
+        [SerializeField] char _value;
+        public char Value { get => _value; set => _value = value; }
         public bool LockTile { get; set; }
         public bool IsDefaultValue() => Value == DefaultValue;
-        public static bool IsDefaultValue(int value) => value == DefaultValue;
+
+        public TileData(TileType type, char value)
+        {
+            _value = value;
+            _type = type;
+            LockTile = false;
+        }
         public override string ToString()
         {
-            return $"(Index={Index}, Value={Value})";
+            return $"(TileType={_type}, Value={Value})";
         }
+    }
+    public enum TileType
+    {
+        Non,
+        Numeric,
+        Alphabet
     }
 }

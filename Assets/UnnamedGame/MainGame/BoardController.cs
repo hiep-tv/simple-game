@@ -27,7 +27,8 @@ namespace UnnamedGame
             cellController.Construct(_cellPool, _cellSize, _boardSize, _cellSpace);
 
             var boardItemController = gameObject.GetComponentSafe<BoardItemController>();
-            boardItemController.Construct(boardItemGenerator, cellController, _boardSize);
+            boardItemController.SetControllers(boardItemGenerator, cellController)
+                .SetData(_cellSize);
 
             UserInput.Enabled = true;
         }
