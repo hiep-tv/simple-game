@@ -7,6 +7,33 @@ namespace UnnamedGame
 {
     public partial class BoardItemController : MonoBehaviour
     {
+        Queue<Action> _actions = new();
+        void CheckAutoMerge()
+        {
+            if (!_autoStarted)
+            {
+                _autoStarted = true;
+                _autoMerge = true;
+                2f.DelayCall(() =>
+                {
+                    1f.DelayCallLoop(() =>
+                    {
+                        FindItemToMerge(_onboardBoardItems);
+                    });
+                    1f.DelayCall(() =>
+                    {
+                        0.3f.DelayCallLoop(CheckMergeActions);
+                    });
+                });
+            }
+        }
+        void CheckMergeActions()
+        {
+            if (_actions.TryDequeue(out Action callback))
+            {
+                callback?.Invoke();
+            }
+        }
         void FindItemToMerge(List<BoardItemData> items)
         {
             FindItemToMerge(items, boardItem1 =>
@@ -15,11 +42,12 @@ namespace UnnamedGame
                 {
                     boardItem1.ItemState = ItemState.Merge;
                     boardItem2.ItemState = ItemState.Merge;
-                    var delay = UnityEngine.Random.Range(0.2f, 0.4f);
-                    delay.DelayCall(() =>
+                    Action callback = OnMerge;
+                    _actions.Enqueue(callback);
+                    void OnMerge()
                     {
                         MergeItem(boardItem1, boardItem2);
-                    });
+                    }
                 }
             });
         }

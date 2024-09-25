@@ -11,11 +11,12 @@ namespace UnnamedGame
             Swap,
             Merge,
         }
+        bool _autoMerge;
         void MergeBoardItems(BoardItemData boardItem)
         {
             var nearestCell = _cellController.GetNearestCell(boardItem.CellId, boardItem.CurrentPosition, out float distance);
             var hasItemOnCell = nearestCell.HasBoardItem;
-            var mergeable = hasItemOnCell && CanMerge(nearestCell.BoardItemData.TileData, boardItem.TileData);
+            var mergeable = hasItemOnCell && CanMerge(nearestCell.BoardItemData, boardItem);
             var state = GetMergeState(distance, mergeable);
             if (state == MergeState.Merge)
             {
@@ -43,7 +44,7 @@ namespace UnnamedGame
         }
         void MergeItem(BoardItemData boardItem1, BoardItemData boardItem2)
         {
-            SetLayer(boardItem1.BoardItemObject, _mergeLayer);
+            SetLayer(boardItem1.BoardItemObject, _autoMerge ? _movingLayer : _mergeLayer);
             var cell2 = _cellController.GetCell(boardItem2.CellId);
             MergeItem(boardItem1, cell2);
         }
@@ -53,11 +54,15 @@ namespace UnnamedGame
             cellData.Release();
             var nearestBoardItem = nearestCell.BoardItemData;
             nearestBoardItem.ItemState = ItemState.Merge;
-            boardItem.UpdatePositionThenRelease(nearestBoardItem.Position
-                , () => nearestBoardItem.ItemState = ItemState.Ready);
             var tileData = nearestBoardItem.TileData;
             tileData.Value++;
-            nearestBoardItem.SetTileData(tileData);
+            boardItem.SetTileData(tileData);
+            boardItem.UpdatePositionThenRelease(nearestBoardItem.Position
+                , () =>
+                {
+                    nearestBoardItem.SetTileData(tileData);
+                    nearestBoardItem.ItemState = ItemState.Ready;
+                }, _autoMerge);
             _selectedBoardItem = nearestBoardItem;
         }
         void SwapItems(BoardItemData boardItem, CellData nearestCell, Action callback)
@@ -83,10 +88,10 @@ namespace UnnamedGame
             }
             return MergeState.Non;
         }
-
-        bool CanMerge(TileData tile1, TileData tile2)
+        bool CanMerge(BoardItemData boardItem, BoardItemData other)
         {
-            return tile1.Value == tile2.Value;
+            var sameType = boardItem.TileData.Mergable(other.TileData);
+            return sameType;
         }
     }
 }

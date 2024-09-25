@@ -16,20 +16,22 @@ namespace UnnamedGame
             _boardItemPool = pool;
         }
 
-        public void Generate(Action<BoardItemData> onCreate)
+        public void Generate(Action<BoardItemData, bool> onCreate)
         {
+            var newItem = false;
             var boardItemData = GetBoardItemData();
             if (boardItemData == null)
             {
                 var boardItemObject = _boardItemPool.GetGameObjectInGroup(transform);
                 boardItemData = new BoardItemData(boardItemObject, _position);
                 _boardItemDatas.Add(boardItemData);
+                newItem = true;
             }
             else
             {
                 boardItemData.SetBoardItemPosition(_position);
             }
-            onCreate?.Invoke(boardItemData);
+            onCreate?.Invoke(boardItemData, newItem);
         }
         BoardItemData GetBoardItemData()
         {

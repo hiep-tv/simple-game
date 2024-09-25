@@ -25,6 +25,7 @@ namespace UnnamedGame
             _cellController = cellController;
             RegisterInputEvent();
             GenerateQueueBoardItems();
+            CheckAutoSpawn();
             return this;
         }
         public BoardItemController SetData(Vector2 cellSize)
@@ -36,9 +37,13 @@ namespace UnnamedGame
         }
         void GenerateQueueBoardItems()
         {
-            _boardItemGenerator.Generate(data =>
+            _boardItemGenerator.Generate((data, newItem) =>
             {
                 _queueBoardItems.Add(data);
+                if (newItem)
+                {
+                    _onboardBoardItems.Add(data);
+                }
             });
         }
     }

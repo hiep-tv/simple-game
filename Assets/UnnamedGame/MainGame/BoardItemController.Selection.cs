@@ -82,18 +82,11 @@ namespace UnnamedGame
         }
         void PutBoardItemOnBoard(BoardItemData boardItem, CellData cellData)
         {
-            var @char = 'A';// UnityEngine.Random.Range(97, 200);
-            boardItem.SetTileData(new TileData(TileType.Alphabet, @char));
+            var tileData = GetTileData();
+            boardItem.SetTileData(tileData);
             MoveBoardItemOnBoard(boardItem, cellData
                 , () => SetLayer(boardItem.BoardItemObject, _normalLayer));
-            if (!_autoStarted)
-            {
-                _autoStarted = true;
-                2f.DelayCall(() =>
-                {
-                    1f.DelayCallLoop(() => FindItemToMerge(_onboardBoardItems));
-                });
-            }
+            CheckAutoMerge();
         }
         void MoveBoardItemOnBoard(BoardItemData boardItem, CellData cellData, Action callback = null)
         {
@@ -102,7 +95,6 @@ namespace UnnamedGame
                 //boardItem.ItemState = ItemState.Ready;
                 ChangeStateToReady(boardItem);
                 _queueBoardItems.Remove(boardItem);
-                _onboardBoardItems.Add(boardItem);
                 if (_queueBoardItems.GetCountSafe() <= 0)
                 {
                     GenerateQueueBoardItems();
